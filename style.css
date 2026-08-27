@@ -1,0 +1,90 @@
+/*
+    Tulis selector CSS kamu di sini!
+
+    Quest 1:
+    1. nav → flex container, logo kiri dan nav-links di kanan
+    2. .logo → font besar + letter-spacing biar mirip design
+    3. .nav-links → flex, hilangkan bullet list-nya
+
+    Quest 2:
+    4. .hero → flex, teks di tengah layar, tinggi cukup besar
+    5. .hero → background gradient (putih → abu-abu), hint: linear-gradient
+    6. .hero-title → font super besar, huruf kapital
+
+    Quest 3:
+    7. .tentang → background putih, padding dalam
+    8. .tentang-content → flex, 2 kolom sejajar
+    9. .card → font tebal, line-height biar enak dibaca
+*/
+
+.iosevka-charon-regular {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.navbar {
+    max-width: 100%;
+    min-width: 100%;
+    height: 120px;
+    background-color: #dddddd;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+.logo {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.nav-links {
+    display: flex;
+    gap:15px;
+    font-size: 32px;
+    list-style: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    background: linear-gradient(180deg, #ffffff 0%, #808080 100%);
+    text-align: center;
+}
+.hero-title {
+    font-size: 110px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1;
+}
+.hero-description {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.tentang {
+    background-color: #ffffff;
+    padding: 50px 40px;
+}
+.tentang h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.tentang-content {
+    display: flex;
+    gap: 40px;
+}
+.card {
+    flex: 1;
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 18px;
+}
